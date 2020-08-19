@@ -13,6 +13,7 @@
 		685B2B4724EDBF3D00C6D728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685B2B4524EDBF3D00C6D728 /* Main.storyboard */; };
 		685B2B4924EDBF3E00C6D728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685B2B4824EDBF3E00C6D728 /* Assets.xcassets */; };
 		685B2B4C24EDBF3E00C6D728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685B2B4A24EDBF3E00C6D728 /* LaunchScreen.storyboard */; };
+		685B2B5424EDF01400C6D728 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685B2B5324EDF01400C6D728 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		685B2B4824EDBF3E00C6D728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685B2B4B24EDBF3E00C6D728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		685B2B4D24EDBF3E00C6D728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685B2B5324EDF01400C6D728 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		685B2B3E24EDBF3D00C6D728 /* SecondTimeLessonNumber4 */ = {
 			isa = PBXGroup;
 			children = (
-				685B2B3F24EDBF3D00C6D728 /* AppDelegate.swift */,
-				685B2B4124EDBF3D00C6D728 /* SceneDelegate.swift */,
-				685B2B4324EDBF3D00C6D728 /* ViewController.swift */,
-				685B2B4524EDBF3D00C6D728 /* Main.storyboard */,
-				685B2B4824EDBF3E00C6D728 /* Assets.xcassets */,
-				685B2B4A24EDBF3E00C6D728 /* LaunchScreen.storyboard */,
-				685B2B4D24EDBF3E00C6D728 /* Info.plist */,
+				685B2B5624EDF03500C6D728 /* Model */,
+				685B2B5724EDF13A00C6D728 /* View */,
+				685B2B5524EDF02900C6D728 /* Controller */,
+				685B2B5824EDF16800C6D728 /* SupportingFiles */,
+				685B2B5924EDF22000C6D728 /* Resources */,
 			);
 			path = SecondTimeLessonNumber4;
+			sourceTree = "<group>";
+		};
+		685B2B5524EDF02900C6D728 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				685B2B4324EDBF3D00C6D728 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		685B2B5624EDF03500C6D728 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				685B2B5324EDF01400C6D728 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		685B2B5724EDF13A00C6D728 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				685B2B4524EDBF3D00C6D728 /* Main.storyboard */,
+				685B2B4A24EDBF3E00C6D728 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		685B2B5824EDF16800C6D728 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				685B2B3F24EDBF3D00C6D728 /* AppDelegate.swift */,
+				685B2B4124EDBF3D00C6D728 /* SceneDelegate.swift */,
+				685B2B4D24EDBF3E00C6D728 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		685B2B5924EDF22000C6D728 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				685B2B4824EDBF3E00C6D728 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685B2B4424EDBF3D00C6D728 /* ViewController.swift in Sources */,
+				685B2B5424EDF01400C6D728 /* Question.swift in Sources */,
 				685B2B4024EDBF3D00C6D728 /* AppDelegate.swift in Sources */,
 				685B2B4224EDBF3D00C6D728 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondTimeLessonNumber4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondTimeLessonNumber4/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.SwiftBook.SecondTimeLessonNumber4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondTimeLessonNumber4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecondTimeLessonNumber4/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.SwiftBook.SecondTimeLessonNumber4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
